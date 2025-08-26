@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Page</title>
+  </head>
+  <body>
+    <h2>Make a Payment</h2>
+    <form action="{{ payu_url }}" method="post">
+      <input type="hidden" name="key" value="{{ payload.key }}" />
+      <input type="hidden" name="txnid" value="{{ payload.txnid }}" />
+      <input type="hidden" name="amount" value="{{ payload.amount }}" />
+      <input
+        type="hidden"
+        name="productinfo"
+        value="{{ payload.productinfo }}"
+      />
+      <input type="hidden" name="firstname" value="{{ payload.firstname }}" />
+      <input type="hidden" name="email" value="{{ payload.email }}" />
+      <input type="hidden" name="phone" value="{{ payload.phone }}" />
+      <input type="hidden" name="surl" value="{{ payload.surl }}" />
+      <input type="hidden" name="furl" value="{{ payload.furl }}" />
+      <input type="hidden" name="hash" value="{{ payload.hash }}" />
+      <button type="submit">Pay Now</button>
+    </form>
+  </body>
+</html>

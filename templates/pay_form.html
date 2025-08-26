@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pay with PayU</title>
+  </head>
+  <body>
+    <form
+      action="{{ payu_url }}"
+      method="post"
+      name="payu_form"
+      enctype="application/x-www-form-urlencoded"
+    >
+      {% for k, v in payload.items() %}
+      <input type="hidden" name="{{ k }}" value="{{ v }}" />
+      {% endfor %}
+      <button type="submit">Pay Now</button>
+    </form>
+  </body>
+</html>

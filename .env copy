@@ -1,0 +1,4 @@
+MERCHANT_KEY= "Uexxdv"
+MERCHANT_SALT= "T04xyfMxBsfKBj6AHnbxUlBOzaXRwBT8"
+NGROK_AUTH_TOKEN="31mFlmCLbexCqua7vgkm1qlFPqR_sYrGdSrXHfL17UKmp15E"
+PAYU_BASE_URL=https://test.payu.in/_payment
