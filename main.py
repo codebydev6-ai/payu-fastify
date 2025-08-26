@@ -105,7 +105,7 @@ def pay(request : Request,amount: float = Form(...), firstname: str = Form(...),
     hashh, amount = generate_hash(txnid, amount, productinfo, firstname, email)
     print(hashh)
     # current_url = get_current_ngrok_url()
-    current_url ="http://43.205.119.12"
+    current_url ="http://43.205.119.12:8000"
     # Prepare payload for PayU form
     payload = {
         "key": MERCHANT_KEY,
